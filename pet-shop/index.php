@@ -11,7 +11,7 @@ $petShop= new PetShop();
     exit();
  }
 
-//  session_unset();
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
