@@ -16,7 +16,7 @@ class Pet{
     function __toString(){
         return "<li>
                 <p class='name'>$this->name</p>
-                <p>$this->age years old.</p>
+                <p>".($this->age > 1? "$this->age years old.":"$this->age year old.")."</p>
                 <p>Type: $this->type</p>
                 <p>".$this->action($this->name)."</p>
                 </li>";
