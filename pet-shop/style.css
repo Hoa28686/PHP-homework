@@ -1,0 +1,125 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --radius: 0.4rem;
+  --border: 1px solid #909090;
+  --shadow-form: 0 0.1rem 0.1rem #c0bebe;
+  --shadow: 0 0.1rem 0.2rem #909090;
+}
+body,
+html {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  text-align: center;
+  line-height: 1.5;
+  scroll-behavior: smooth;
+  position: relative;
+  /* important to keep footer at the bottom */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+.paw {
+  width: 10rem;
+  position: absolute;
+  top: 5rem;
+  left: 0;
+  rotate: -30deg;
+  z-index: -2;
+}
+
+/* ___________header, footer__________ */
+footer {
+  background-image: url("colorful-paw.jpg");
+  background-repeat: repeat-x;
+  background-size: auto 100%;
+  height: 5rem;
+  /* important to keep footer at the bottom */
+  margin-top: auto;
+}
+
+header {
+  background-color: #38d95b;
+  color: black;
+  padding: 1rem;
+  margin-bottom: 2rem;
+}
+/* _______________form________________ */
+
+form {
+  margin-block: 2rem 3rem;
+}
+input,
+select,
+button {
+  border-radius: var(--radius);
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: var(--border);
+  box-shadow: var(--shadow-form);
+  margin-inline: 0.1rem;
+}
+input:focus,
+select:focus,
+button:focus {
+  outline: 1px solid #209a3a;
+}
+button {
+  background-color: #38d95b;
+  color: black;
+  font-weight: bold;
+  width: 4rem;
+  transition: color 0.2s, transform 0.2s;
+}
+button:hover {
+  transform: scale(1.02);
+}
+.inputAge {
+  width: 4rem;
+}
+.inputName {
+  width: 15rem;
+}
+
+/* ______________display list___________ */
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  columns: 300px;
+  margin-block: 1rem;
+}
+li {
+  border-radius: var(--radius);
+  border: var(--border);
+  padding: 1rem;
+  margin: 1rem;
+  box-shadow: var(--shadow);
+  transition: transform 0.3s;
+  min-width: 290px;
+  /* background-color: #d5fab8; */
+}
+li:hover {
+  transform: scale(1.05);
+}
+.name {
+  font-weight: bold;
+}
+
+@media (max-width: 900px) {
+  .container {
+    width: 90%;
+  }
+}
