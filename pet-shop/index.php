@@ -32,7 +32,7 @@ $petShop= new PetShop();
                 <h3>Add new pet to the shop</h3>
                 <br>
                 <input name="name" class="inputName" type="text"  placeholder="Name" required>
-                <input name="age" class="inputAge" type="number"  placeholder="Age" required>
+                <input name="age" class="inputAge" type="number" min=1 placeholder="Age" required>
                 <select name="type" required>
                     <option value="">Type</option>
                     <option value="dog">Dog</option>
