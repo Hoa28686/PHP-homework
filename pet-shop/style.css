@@ -67,6 +67,8 @@ button {
   border: var(--border);
   box-shadow: var(--shadow-form);
   margin-inline: 0.1rem;
+  -webkit-appearance: none;
+  -moz-appearance: none;
 }
 input:focus,
 select:focus,
